@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Way Village Hotel & Spa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      color: #333;
+      background-color: #f8f8f8;
+    }
+
+    header {
+      background: url('images/fon.jpeg') no-repeat center center/contain;
+      height: 70vh;
+      color: rgb(47, 110, 161);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 10px;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 8px;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+    }
+
+    header p {
+      font-size: 1rem;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    }
+
+    nav {
+      background: #004d40;
+      padding: 10px 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    nav a {
+      color: white;
+      font-size: 0.9rem;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background: #00695c;
+    }
+
+    section {
+      padding: 40px 15px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 1.6rem;
+      color: #004d40;
+    }
+
+    .rooms, .services {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+
+    @media (min-width: 600px) {
+      .rooms, .services {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 900px) {
+      .rooms, .services {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      background: white;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-content h3 {
+      margin-bottom: 8px;
+      color: #004d40;
+      font-size: 1.1rem;
+    }
+
+    .card-content p {
+      font-size: 0.9rem;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+
+    footer {
+      background: #004d40;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+    }
+
+    footer p {
+      margin: 3px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#home">Ana Səhifə</a>
+    <a href="#rooms">Otaqlar</a>
+    <a href="#services">Xidmətlər</a>
+    <a href="#restaurant">Restoran</a>
+    <a href="#contact">Əlaqə</a>
+  </nav>
+
+  <header id="home">
+    <h1></h1>
+    <p></p>
+  </header>
+
+  <section id="rooms">
+    <h2 class="section-title">Otaqlarımız</h2>
+    <div class="rooms">
+      <div class="card">
+        <img src="images/WhatsApp Image 2025-11-13 at 23.46.53.jpeg" alt="Standart Otaq">
+        <div class="card-content">
+          <h3>Standart Kottec</h3>
+          <p>2 nəfərlik (Hovuz, Səhər yeməyi və SPA daxil) — 200 AZN.<br>Əlavə şəxs üçün 5+ 30 AZN.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/vip kottec.jpeg" alt="Dublex Kottec">
+        <div class="card-content">
+          <h3>Dublex Kottec</h3>
+          <p>2 nəfərlik (Hovuz, Səhər yeməyi və SPA daxil) — 250 AZN.<br>Əlavə şəxs üçün 5+ 30 AZN.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/otaq ic.jpeg" alt="Vip Kottec">
+        <div class="card-content">
+          <h3>Vip Kottec</h3>
+          <p>4 nəfərlik (Hovuz, Səhər yeməyi və SPA daxil) — 350 AZN.<br>Əlavə şəxs üçün 5+ 30 AZN.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2 class="section-title"></h2>
+    <div class="services">
+      <div class="card">
+        <img src="images/standart ic.jpeg" alt="Spa">
+        <div class="card-content">
+          <h3>Standart Kottec </h3>
+          <p></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/xidmet.jpeg" alt="Restoran">
+        <div class="card-content">
+          <h3>Restoran</h3>
+          <p></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/desmal.jpeg" alt="Hovuz">
+        <div class="card-content">
+          <h3>Hovuz & Aktivlik</h3>
+          <p> </p>
+        </div>
+      </div>
+    </div>
+  </section>
+   <section id="services">
+    <h2 class="section-title">Xidmətlərimiz</h2>
+    <div class="services">
+      <div class="card">
+        <img src="images/spa.jpeg" alt="Spa">
+        <div class="card-content">
+          <h3>Spa & Wellness</h3>
+          <p>Bədən və ruhunuzu rahatladan mükəmməl spa xidmətləri.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/restoran.jpeg" alt="Restoran">
+        <div class="card-content">
+          <h3>Restoran</h3>
+          <p>Zəngin menyu,  və yerli ləzzətlər.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/hovuz.jpeg" alt="Hovuz">
+        <div class="card-content">
+          <h3>Hovuz & Aktivlik</h3>
+          <p> Açıq hovuz.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="restaurant">
+    <h2 class="section-title">Restoranımız</h2>
+    <p style="text-align:center; max-width:800px; margin:auto;">
+      Restoranımız yerli və beynəlxalq mətbəxdən seçmələr təqdim edir. Səhər yeməyi, nahar və şam yeməkləri ilə qonaqların rahatlığı təmin olunur.
+    </p>
+  </section>
+  
+
+  <section id="contact">
+    <h2 class="section-title">Əlaqə</h2>
+    <p style="text-align:center;">Ünvan: İsmayıllı, Çayqovuşan, Azərbaycan</p>
+    <p style="text-align:center;">Telefon: +994 50 309 93 92</p>
+    <p style="text-align:center;">Email: mywayvillagehotelandresorts@gmail.com</p>
+  </section>
+
+  <footer>
+    <p>© 2025 My Way Village Hotel & Spa. Bütün hüquqlar qorunur. Hazırladı: Tural Məmmədli</p>
+  </footer>
+
+</body>
+</html>
